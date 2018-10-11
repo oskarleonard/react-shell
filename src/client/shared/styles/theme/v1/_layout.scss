@@ -1,0 +1,17 @@
+@mixin breakpoint($point) {
+  @if ($point == widescreen) {
+    @media (min-width: $widescreen) { @content }
+  }
+
+  @else if ($point == desktop) {
+    @media (min-width: $desktop) { @content }
+  }
+
+  @else if ($point == tablet) {
+    @media (min-width: $tablet) { @content }
+  }
+
+  @else if ($point == mobile-landscape) {
+    @media (min-width: $mobile-landscape) { @content }
+  }
+}

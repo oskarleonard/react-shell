@@ -1,0 +1,50 @@
+.homeRoute {
+
+  @include breakpoint(tablet) {
+
+  }
+
+  p {
+    color: $darkgray;
+  }
+
+  div {
+    content: $node-env;
+  }
+}
+
+.heroImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background: url("./background-top.jpeg") 50% 10%;
+  background-size: cover;
+}
+
+.uspSection {
+  position: absolute;
+  top: 46vh;
+  left: 3%;
+  width: 94%;
+  color: white;
+  background-color: black;
+  padding: 10px;
+
+  .uspTitle {
+    color: #e03a47;
+  }
+
+  .uspDescription {
+    color: gold;
+  }
+
+  .uspLine {
+    height: 1px;
+    background-color: #F2F2F2;
+  }
+}
+
+.bottomBackground {
+  width: 100vw;
+}
